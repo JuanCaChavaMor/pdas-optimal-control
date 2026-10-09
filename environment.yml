@@ -1,0 +1,13 @@
+# Conda environment with legacy FEniCS (not tested; the code was tested with Ubuntu's python3-dolfin)
+name: pdas-adr
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - fenics=2019.1.0
+  - numpy<2
+  - matplotlib
+  - pip
+  - pip:
+      - cashocs==1.3.4
+      - deprecated
